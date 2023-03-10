@@ -3,54 +3,52 @@
   <head><meta charset="utf-8">
     <title> Task: CSS Bayan </title>
     <style>
-       .accordion {
-		  text-align: center;
+
+        
+.accordion {
+        
+        border: 2px solid rgb(1, 1, 1);
+        background-color: #e7f7b2;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
 		}
-		.accordion > .acc1:hover:before
-		{
-		   content: url("1.jpg");
-        } 
-        .accordion > .acc2:hover:before
-		{
-		   content: url("2.jpg");
-        } 
-        .accordion > .acc3:hover:before
-		{
-		   content: url("3.jpg");
-        } 
-        .accordion > .acc4:hover:before
-		{
-		   content: url("4.jpg");
-        } 
-        .accordion > .acc5:hover:before
-		{
-		   content: url("5.jpg");
-        } 
+
+        .acc-img-1{
+            display: none;
+        }
+
+        .acc-ico{
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 140px;
+        }
+
+        
+
+        .acc-text-1:hover + .acc-img-1{
+        display: block;
+        }
+
+        .accordion:hover + .acc-ico{
+        display: block;
+        }
+        
+
     </style>
   </head>
   <body>
 <div class="accordion">
-
-<div class="acc1">
-<span>Mem 1</span>
+        <div class="acc-text-1">Mem 1</div>
+        <div  class="acc-img-1" >
+        <img src="1.jpg" alt=""/>
+        </div>
 </div>
-
-<div class="acc2">
-<span>Mem 2</span>
+<div class = "acc-ico">
+    <img src="ico.png" alt="ico"/>
 </div>
-
-<div class="acc3">
-<span>Mem 3</span>
-</div>
-
-<div class="acc4">
-<span>Mem 4</span>
-</div>
-
-<div class="acc5">
-<span>Mem 5</span>
-</div>
-
-</div>
+<hr>
   </body>
   </html>
