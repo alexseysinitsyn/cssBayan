@@ -11,7 +11,7 @@
         padding-top: 50px;
         padding-left: 100px;
 		}
-        .acc-ico-1, .acc-ico-2, .acc-ico-3, .acc-ico-4, .acc-ico-5{
+        .acc-ico-1, .acc-ico-check-1, .acc-ico-2, .acc-ico-check-2, .acc-ico-3, .acc-ico-check-3, .acc-ico-4, .acc-ico-check-4, .acc-ico-5, .acc-ico-check-5{
             visibility: hidden;
             position: relative;
             bottom: 50px;
@@ -52,11 +52,51 @@
             display: block;
         }
 
+        #acc-check-1:hover + label > .acc-ico-1{
+            display: none;
+        }
+
+        #acc-check-1:hover + label > .acc-ico-check-1{
+            visibility: visible;
+        }
+
+        #acc-check-1:checked + label > .acc-ico-1 {
+            display: none;
+        }
+        #acc-check-1:checked + label > .acc-ico-check-1 {
+            visibility: visible;
+        }
+
+        #acc-check-1:checked + label > .acc-ico-1 {
+            background: url(ico-check.png) no-repeat 0 0;
+        }
+
+
+
         #acc-check-2:checked + label > img {
             display: block;
         }
         #acc-check-2:hover + label > img {
             display: block;
+        }
+
+        #acc-check-2:hover + label > .acc-ico-2{
+            display: none;
+        }
+
+        #acc-check-2:hover + label > .acc-ico-check-2{
+            visibility: visible;
+        }
+
+        #acc-check-2:checked + label > .acc-ico-2 {
+            display: none;
+        }
+        #acc-check-2:checked + label > .acc-ico-check-2 {
+            visibility: visible;
+        }
+
+        #acc-check-2:checked + label > .acc-ico-2 {
+            background: url(ico-check.png) no-repeat 0 0;
         }
 
         #acc-check-3:checked + label > img {
@@ -65,17 +105,76 @@
         #acc-check-3:hover + label > img {
             display: block;
         }
+
+        #acc-check-3:hover + label > .acc-ico-3{
+            display: none;
+        }
+
+        #acc-check-3:hover + label > .acc-ico-check-3{
+            visibility: visible;
+        }
+
+        #acc-check-3:checked + label > .acc-ico-3 {
+            display: none;
+        }
+        #acc-check-3:checked + label > .acc-ico-check-3 {
+            visibility: visible;
+        }
+
+        #acc-check-3:checked + label > .acc-ico-3 {
+            background: url(ico-check.png) no-repeat 0 0;
+        }
+
         #acc-check-4:checked + label > img {
             display: block;
         }
         #acc-check-4:hover + label > img {
             display: block;
         }
+
+        #acc-check-4:hover + label > .acc-ico-4{
+            display: none;
+        }
+
+        #acc-check-4:hover + label > .acc-ico-check-4{
+            visibility: visible;
+        }
+
+        #acc-check-4:checked + label > .acc-ico-4 {
+            display: none;
+        }
+        #acc-check-4:checked + label > .acc-ico-check-4 {
+            visibility: visible;
+        }
+
+        #acc-check-4:checked + label > .acc-ico-4 {
+            background: url(ico-check.png) no-repeat 0 0;
+        }
+
         #acc-check-5:checked + label > img {
             display: block;
         }
         #acc-check-5:hover + label > img {
             display: block;
+        }
+
+        #acc-check-5:hover + label > .acc-ico-5{
+            display: none;
+        }
+
+        #acc-check-5:hover + label > .acc-ico-check-5{
+            visibility: visible;
+        }
+
+        #acc-check-5:checked + label > .acc-ico-5 {
+            display: none;
+        }
+        #acc-check-5:checked + label > .acc-ico-check-5 {
+            visibility: visible;
+        }
+
+        #acc-check-5:checked + label > .acc-ico-5 {
+            background: url(ico-check.png) no-repeat 0 0;
         }
 
 
@@ -92,6 +191,7 @@
             <label for="acc-check-1">
                 <div class="accordion-1"><h3>You can't just copy and past CSS</h3></div>
                 <div class = "acc-ico-1"><img src="ico.png" alt="ico"/></div>
+                <div class = "acc-ico-check-1"><img src="ico-check.png" alt="ico"/></div>
                 <img class="acc-img-1" src="1.jpg" alt=""/>
             </label>
             <hr>
@@ -99,6 +199,7 @@
             <label for="acc-check-2">
                 <div class="accordion-2"><h3>Keep calm and carry on</h3></div>
                 <div class = "acc-ico-2"><img src="ico.png" alt="ico"/></div>
+                <div class = "acc-ico-check-2"><img src="ico-check.png" alt="ico"/></div>
                 <img class="acc-img-2" src="2.jpg" alt=""/>
             </label>
             <hr>
@@ -106,6 +207,7 @@
             <label for="acc-check-3">
                 <div class="accordion-3"><h3>Work life balance</h3></div>
                 <div class = "acc-ico-3"><img src="ico.png" alt="ico"/></div>
+                <div class = "acc-ico-check-3"><img src="ico-check.png" alt="ico"/></div>
                 <img class="acc-img-3" src="3.jpg" alt=""/>
             </label>
             <hr>
@@ -113,6 +215,7 @@
             <label for="acc-check-4">
                 <div class="acc-text-4"><h3>Dud, where is JS</h3></div>
                 <div class = "acc-ico-4"><img src="ico.png" alt="ico"/></div>
+                <div class = "acc-ico-check-4"><img src="ico-check.png" alt="ico"/></div>
                 <img class="acc-img-4" src="4.jpg" alt=""/>
             </label>
         
@@ -120,6 +223,7 @@
             <input type="radio" name = "acc-input" id="acc-check-5"/>
                 <div class="acc-text-5"><h3>Relax ana take it easy</h3></div>
                 <div class = "acc-ico-5"><img src="ico.png" alt="ico"/></div>
+                <div class = "acc-ico-check-5"><img src="ico-check.png" alt="ico"/></div>
                 <img class="acc-img-5" src="5.jpg" alt=""/>
             </label>
             <hr>
