@@ -39,9 +39,9 @@
             left: 20%;
 
         }
-        .accordion-1:hover  .acc-img-1{
-        display: block;
-        }
+    .container input {
+        display:none;}
+    
         
         .accordion-2:hover  .acc-img-2{
         display: block;
@@ -55,43 +55,85 @@
         .accordion-5:hover  .acc-img-5{
         display: block;
         }
+        .accordion-5:active .acc-img-5{
+            display: block;
+        }
         
+        #acc-check-1:checked + label > img {
+            display: block;
+        }
+        #acc-check-1:hover + label > img {
+            display: block;
+        }
+
+        #acc-check-2:checked + label > img {
+            display: block;
+        }
+        #acc-check-2:hover + label > img {
+            display: block;
+        }
+
+        #acc-check-3:checked + label > img {
+            display: block;
+        }
+        #acc-check-3:hover + label > img {
+            display: block;
+        }
+        #acc-check-4:checked + label > img {
+            display: block;
+        }
+        #acc-check-4:hover + label > img {
+            display: block;
+        }
+        #acc-check-5:checked + label > img {
+            display: block;
+        }
+        #acc-check-5:hover + label > img {
+            display: block;
+        }
     </style>
   </head>
   <body>
     <div class="container">
         <h1>CSS BAYAN</h1>
         <hr>
-        <div class="accordion-1">
-                <div class="acc-text-1"><h2>You can't just copy and past CSS</h2></div>
+        
+        
+        <input type="radio" name = "acc-input" id="acc-check-1"/>
+            <label for="acc-check-1">
+                <div class="accordion-1"><h3>You can't just copy and past CSS</h3></div>
                 <div class = "acc-ico-1"><img src="ico.png" alt="ico"/></div>
-                <div  class="acc-img-1" ><img src="1.jpg" alt=""/></div>
-        </div>
-        <hr>
-        <div class="accordion-2">
-            <div class="acc-text-2"><h2>Keep calm and carry on</h2></div>
-            <div class = "acc-ico-2"><img src="ico.png" alt="ico"/></div>
-            <div  class="acc-img-2" ><img src="2.jpg" alt=""/></div>
-        </div>
-        <hr>
-        <div class="accordion-3">
-            <div class="acc-text-3"><h2>Work life balance</h2></div>
-            <div class = "acc-ico-3"><img src="ico.png" alt="ico"/></div>
-            <div  class="acc-img-3" ><img src="3.jpg" alt=""/></div>
-        </div>
-        <hr>
-        <div class="accordion-4">
-            <div class="acc-text-4"><h2>Dud, where is JS</h2></div>
-            <div class = "acc-ico-4"><img src="ico.png" alt="ico"/></div>
-            <div  class="acc-img-4" ><img src="4.jpg" alt=""/></div>
-        </div>
-        <hr>
-        <div class="accordion-5">
-            <div class="acc-text-5"><h2>Relax ana take it easy</h2></div>
-            <div class = "acc-ico-5"><img src="ico.png" alt="ico"/></div>
-            <div  class="acc-img-5" ><img src="5.jpg" alt=""/></div>
-        </div>
-        <hr>
+                <img class="acc-img-1" src="1.jpg" alt=""/>
+            </label>
+            <hr>
+            <input type="radio" name = "acc-input" id="acc-check-2"/>
+            <label for="acc-check-2">
+                <div class="accordion-2"><h3>Keep calm and carry on</h3></div>
+                <div class = "acc-ico-2"><img src="ico.png" alt="ico"/></div>
+                <img class="acc-img-2" src="2.jpg" alt=""/>
+            </label>
+            <hr>
+            <input type="radio" name = "acc-input" id="acc-check-3"/>
+            <label for="acc-check-3">
+                <div class="accordion-3"><h3>Keep calm and carry on</h3></div>
+                <div class = "acc-ico-3"><img src="ico.png" alt="ico"/></div>
+                <img class="acc-img-3" src="3.jpg" alt=""/>
+            </label>
+            <hr>
+            <input type="radio" name = "acc-input" id="acc-check-4"/>
+            <label for="acc-check-4">
+                <div class="acc-text-4"><h3>Dud, where is JS</h3></div>
+                <div class = "acc-ico-4"><img src="ico.png" alt="ico"/></div>
+                <img class="acc-img-4" src="4.jpg" alt=""/>
+            </label>
+        
+            <hr>
+            <input type="radio" name = "acc-input" id="acc-check-5"/>
+                <div class="acc-text-5"><h3>Relax ana take it easy</h3></div>
+                <div class = "acc-ico-5"><img src="ico.png" alt="ico"/></div>
+                <img class="acc-img-5" src="5.jpg" alt=""/>
+            </label>
+            <hr>
     </div>
   </body>
   </html>
