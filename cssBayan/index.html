@@ -3,52 +3,95 @@
   <head><meta charset="utf-8">
     <title> Task: CSS Bayan </title>
     <style>
-
-        
-.accordion {
-        
-        border: 2px solid rgb(1, 1, 1);
+        .container {
         background-color: #e7f7b2;
         width: 80%;
         margin: auto;
-        text-align: center;
+        text-align: left;
         padding-top: 50px;
+        padding-left: 100px;
 		}
-
-        .acc-img-1{
-            display: none;
-        }
-
-        .acc-ico{
-            display: none;
-            position: absolute;
-            top: 10px;
-            right: 140px;
-        }
-
-        
-
-        .acc-text-1:hover + .acc-img-1{
-        display: block;
-        }
-
-        .accordion:hover + .acc-ico{
-        display: block;
+        .acc-ico-1, .acc-ico-2, .acc-ico-3, .acc-ico-4, .acc-ico-5{
+            visibility: hidden;
+            position: relative;
+            bottom: 50px;
+            left: 900px;
         }
         
+        .container:hover .acc-ico-1{
+       visibility: visible;
+        }
+        .container:hover  .acc-ico-2{
+       visibility: visible;
+        }
+        .container:hover  .acc-ico-3{
+       visibility: visible;
+        }
+        .container:hover  .acc-ico-4{
+       visibility: visible;
+        }
+        .container:hover  .acc-ico-5{
+       visibility: visible;
+        }
+        .acc-img-1, .acc-img-2, .acc-img-3, .acc-img-4, .acc-img-5{
+            display: none;
+            position: relative;
+            left: 20%;
 
+        }
+        .accordion-1:hover  .acc-img-1{
+        display: block;
+        }
+        
+        .accordion-2:hover  .acc-img-2{
+        display: block;
+        }
+        .accordion-3:hover  .acc-img-3{
+        display: block;
+        }
+        .accordion-4:hover  .acc-img-4{
+        display: block;
+        }
+        .accordion-5:hover  .acc-img-5{
+        display: block;
+        }
+        
     </style>
   </head>
   <body>
-<div class="accordion">
-        <div class="acc-text-1">Mem 1</div>
-        <div  class="acc-img-1" >
-        <img src="1.jpg" alt=""/>
+    <div class="container">
+        <h1>CSS BAYAN</h1>
+        <hr>
+        <div class="accordion-1">
+                <div class="acc-text-1"><h2>You can't just copy and past CSS</h2></div>
+                <div class = "acc-ico-1"><img src="ico.png" alt="ico"/></div>
+                <div  class="acc-img-1" ><img src="1.jpg" alt=""/></div>
         </div>
-</div>
-<div class = "acc-ico">
-    <img src="ico.png" alt="ico"/>
-</div>
-<hr>
+        <hr>
+        <div class="accordion-2">
+            <div class="acc-text-2"><h2>Keep calm and carry on</h2></div>
+            <div class = "acc-ico-2"><img src="ico.png" alt="ico"/></div>
+            <div  class="acc-img-2" ><img src="2.jpg" alt=""/></div>
+        </div>
+        <hr>
+        <div class="accordion-3">
+            <div class="acc-text-3"><h2>Work life balance</h2></div>
+            <div class = "acc-ico-3"><img src="ico.png" alt="ico"/></div>
+            <div  class="acc-img-3" ><img src="3.jpg" alt=""/></div>
+        </div>
+        <hr>
+        <div class="accordion-4">
+            <div class="acc-text-4"><h2>Dud, where is JS</h2></div>
+            <div class = "acc-ico-4"><img src="ico.png" alt="ico"/></div>
+            <div  class="acc-img-4" ><img src="4.jpg" alt=""/></div>
+        </div>
+        <hr>
+        <div class="accordion-5">
+            <div class="acc-text-5"><h2>Relax ana take it easy</h2></div>
+            <div class = "acc-ico-5"><img src="ico.png" alt="ico"/></div>
+            <div  class="acc-img-5" ><img src="5.jpg" alt=""/></div>
+        </div>
+        <hr>
+    </div>
   </body>
   </html>
