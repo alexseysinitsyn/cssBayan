@@ -11,40 +11,30 @@
         padding-top: 50px;
         padding-left: 100px;
 		}
-        .acc-ico-1, .acc-ico-check-1, .acc-ico-2, .acc-ico-check-2, .acc-ico-3, .acc-ico-check-3, .acc-ico-4, .acc-ico-check-4, .acc-ico-5, .acc-ico-check-5 {
+        .acc-ico-1, .acc-ico-check-1,
+        .acc-ico-2, .acc-ico-check-2,
+        .acc-ico-3, .acc-ico-check-3,
+        .acc-ico-4, .acc-ico-check-4,
+        .acc-ico-5, .acc-ico-check-5 {
             visibility: hidden;
             position: relative;
             bottom: 50px;
             left: 900px;
         }
         
-        .container:hover .acc-ico-1{
-       visibility: visible;
-        }
-        .container:hover  .acc-ico-2{
-       visibility: visible;
-        }
-        .container:hover  .acc-ico-3{
-       visibility: visible;
-        }
-        .container:hover  .acc-ico-4{
-       visibility: visible;
-        }
-        .container:hover  .acc-ico-5{
-       visibility: visible;
-        }
+        .container:hover .acc-ico-1{visibility: visible;}
+        .container:hover .acc-ico-2{visibility: visible;}
+        .container:hover .acc-ico-3{visibility: visible;}
+        .container:hover .acc-ico-4{visibility: visible;}
+        .container:hover .acc-ico-5{visibility: visible;}
         .acc-img-1, .acc-img-2, .acc-img-3, .acc-img-4, .acc-img-5 {
             display: none;
             position: relative;
             left: 20%;
 
         }
-        .container input {
-        display:none;}
+        .container input {display:none;}
     
-        
-        
-        
         #acc-check-1:checked + label > img {display: block;}
         #acc-check-1:checked + label > .acc-ico-1 {display: none;}
         #acc-check-1:checked + label > .acc-ico-check-1 {visibility: visible;}
